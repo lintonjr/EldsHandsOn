@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity"
+    android:background="@drawable/ic_main_background">
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:src="@drawable/title1"
+        android:id="@+id/titleImg1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="300dp"
+        />
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:src="@drawable/title2"
+        android:id="@+id/titleImg2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleImg1"
+        android:layout_marginTop="10dp"
+        />
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_microsoft_azure_logo"
+        android:id="@+id/azureLogoId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
