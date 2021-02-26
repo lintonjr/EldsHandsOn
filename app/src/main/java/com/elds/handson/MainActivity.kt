@@ -33,6 +33,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        supportActionBar?.title = "Image Detect";
         txtResult = findViewById(R.id.txt_result)
         imgView = findViewById(R.id.img_view)
         btnPick = findViewById(R.id.btn_pick)
