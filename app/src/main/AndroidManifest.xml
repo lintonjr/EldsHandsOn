@@ -13,8 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HandsOn"
         android:usesCleartextTraffic="true">
-        <activity android:name=".HomeActivity"
-            android:label="Home"></activity>
+        <activity android:name=".CelebrityActivity"></activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="Home" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,7 +26,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:label="Main"></activity>
+            android:label="Main" />
 
         <meta-data
             android:name="preloaded_fonts"

@@ -23,10 +23,10 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-//        cardRecFamoso.setOnClickListener {
-//            val intent = Intent(this, ::class.java)
-//            startActivity(intent)
-//        }
+        cardRecFamoso.setOnClickListener {
+            val intent = Intent(this, CelebrityActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 }
