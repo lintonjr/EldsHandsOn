@@ -13,15 +13,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HandsOn"
         android:usesCleartextTraffic="true">
+        <activity android:name=".HomeActivity"
+            android:label="Home"></activity>
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"
-            android:label="Main">
-        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="Main"></activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
