@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/material_background"
+    tools:context=".HomeActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/title_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/abril_fatface"
+        android:text="Hands On"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toBottomOf="@id/title_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:rowCount="2"
+        android:columnCount="1"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reconhecimentoImagemId"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:orientation="vertical"
+                android:gravity="bottom"
+                android:background="@drawable/img_recognition"
+                android:layout_gravity="center_vertical|center_horizontal"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/reconhecimento_text"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reconhecimentoFamosoId"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:orientation="vertical"
+                android:gravity="bottom"
+                android:background="@drawable/face_recognition"
+                android:layout_gravity="center_vertical|center_horizontal"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/famosos_text"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
